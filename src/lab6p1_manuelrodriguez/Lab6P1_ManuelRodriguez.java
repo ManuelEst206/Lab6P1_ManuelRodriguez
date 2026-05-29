@@ -68,25 +68,35 @@ public class Lab6P1_ManuelRodriguez {
             int rd = ran.nextInt(1,50);
             System.out.print("["+rd+"]");
         }
+        System.out.println("   ");
+        System.out.println("Ingrese el indice DESDE: ");
+        System.out.println("Ingrese el indice HASTA");
         
     }
     
     public static void busquedaLineal(Scanner scanner){
         int[] arreglo = new int[10];
         Random random = new Random();
-       boolean encontrado = false;
+        int encontrado;
+        int posicion= 0;
         System.out.println("Arreglo generado: ");
         for (int i = 0; i < arreglo.length; i++) {
             int n = random.nextInt(1,50);
-            System.out.print("["+n+"]" );
-            break;
-        }
-        scanner.nextLine();
-        System.out.print("Ingrese un numero a encontrar: ");
-            int numero = scanner.nextInt();
-            if(numero == random.nextInt(1,50)){
-                System.out.println("El numero fue encontrado.");
+            System.out.print("["+n+"]");
+            
             }
+            System.out.println("   ");
+            System.out.println("Ingresa un numero a buscar: ");
+            encontrado = scanner.nextInt();
+            for (int i = 0; i < arreglo.length; i++) {
+                posicion += 1;
+                if(encontrado== random.nextInt(1,50)){
+                    System.out.println("El numero fue encontrado!");
+                    System.out.println("Primera posicion encontrada: ");
+                    System.out.println("Cantidad de apariciones: ");
+            }
+        }
+            
     }//fin del metodo
 
     
