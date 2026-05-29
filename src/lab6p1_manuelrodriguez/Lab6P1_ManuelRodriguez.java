@@ -4,6 +4,9 @@
  */
 package lab6p1_manuelrodriguez;
 
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  *
  * @author manu_
@@ -14,7 +17,65 @@ public class Lab6P1_ManuelRodriguez {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        int option;
+        
+        do{
+            System.out.println("======MENU======");
+            System.out.println("1. Drunk Dazed");
+            System.out.println("2. SubArrays Manual");
+            System.out.println("3. Busqueda Lineal");
+            System.out.println("4. Salir");
+            System.out.println("================");
+            System.out.print("Seleccione una opcion: ");
+            option = scanner.nextInt();
+            
+            switch(option){
+                case 1:
+                    System.out.println("=DRUNK DAZED=");
+                    break;
+                case 2:
+                    System.out.println("=SUBARRAYS MANUAL=");
+                    break;
+                case 3:
+                    System.out.println("=BUSQUEDA LINEAL=");
+                    break;
+                case 4:
+                    System.out.println("Eso es todo, terminando...");
+                    break;
+                default:
+                    System.out.println("Invalido, intente de nuevo...");
+                
+            }
+        }while(option!=4);
+        
+    }//fin del main
+    
+    public static void drunkDazed(Scanner scanner){
+        char[] arreglo = new char[11];
+        
+        for (int i = 0; i < arreglo.length; i++) {
+            
+        }
+    }
+    public static void SubArraysManual(Scanner scanner){
+        int[] original = new int[10];
+        Random a = new Random();
+        
+        for (int i = 0; i < original.length; i++) {
+            
+        }
+        
     }
     
-}
+    public static void busquedaLineal(Scanner scanner){
+        int[] arreglo = new int[10];
+        Random r = new Random();
+        
+        for (int i = 0; i < arreglo.length; i++) {
+            
+        }
+    }//fin del metodo
+    
+    
+}// fin del lab
