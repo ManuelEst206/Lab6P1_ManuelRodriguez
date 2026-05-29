@@ -36,9 +36,11 @@ public class Lab6P1_ManuelRodriguez {
                     break;
                 case 2:
                     System.out.println("=SUBARRAYS MANUAL=");
+                    subArraysManual(scanner);
                     break;
                 case 3:
                     System.out.println("=BUSQUEDA LINEAL=");
+                    busquedaLineal(scanner);
                     break;
                 case 4:
                     System.out.println("Eso es todo, terminando...");
@@ -58,24 +60,34 @@ public class Lab6P1_ManuelRodriguez {
             
         }
     }
-    public static void SubArraysManual(Scanner scanner){
+    public static void subArraysManual(Scanner scanner){
         int[] original = new int[10];
-        Random a = new Random();
-        
+        Random ran = new Random();
+        System.out.println("Arreglo original: ");
         for (int i = 0; i < original.length; i++) {
-            
+            int rd = ran.nextInt(1,50);
+            System.out.print("["+rd+"]");
         }
         
     }
     
     public static void busquedaLineal(Scanner scanner){
         int[] arreglo = new int[10];
-        Random r = new Random();
-        
+        Random random = new Random();
+       boolean encontrado = false;
+        System.out.println("Arreglo generado: ");
         for (int i = 0; i < arreglo.length; i++) {
-            
+            int n = random.nextInt(1,50);
+            System.out.print("["+n+"]" );
+            break;
         }
+        scanner.nextLine();
+        System.out.print("Ingrese un numero a encontrar: ");
+            int numero = scanner.nextInt();
+            if(numero == random.nextInt(1,50)){
+                System.out.println("El numero fue encontrado.");
+            }
     }//fin del metodo
-    
+
     
 }// fin del lab
